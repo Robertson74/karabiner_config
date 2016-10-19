@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<root>
+    <modifierdef>SUPER_MODIFIER</modifierdef>
+    <modifierdef>MOUSE_ARROWS</modifierdef>
+    <item>
+        <identifier>private.SUPER_MODIFIER</identifier>
+        <autogen>
+            __KeyOverlaidModifier__
+            KeyCode::TAB,
+            KeyCode::VK_MODIFIER_SUPER_MODIFIER,
+            KeyCode::TAB
+        </autogen>
+
+<!-- ///////////////////////// Symbols -->
+        <name>Symbols pad with Command_L + Super_MOD</name>
+        <identifier>Symbols pad with Q</identifier>
+        <autogen>
+            __KeyToKey__
+            KeyCode::M, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L,
+            KeyCode::1, ModifierFlag::SHIFT_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::COMMA, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L,
+            KeyCode::2, ModifierFlag::SHIFT_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::DOT, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L,
+            KeyCode::3, ModifierFlag::SHIFT_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::J, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L,
+            KeyCode::4, ModifierFlag::SHIFT_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::K, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L,
+            KeyCode::5, ModifierFlag::SHIFT_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::L, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L,
+            KeyCode::6, ModifierFlag::SHIFT_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::U, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L,
+            KeyCode::7, ModifierFlag::SHIFT_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::I, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L,
+            KeyCode::8, ModifierFlag::SHIFT_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::O, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L,
+            KeyCode::9, ModifierFlag::SHIFT_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::SPACE, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L,
+            KeyCode::0, ModifierFlag::SHIFT_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::P, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L,
+            KeyCode::MINUS, ModifierFlag::SHIFT_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::SEMICOLON, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L,
+            KeyCode::EQUAL, ModifierFlag::SHIFT_L
+        </autogen>
+
+<!-- ///////////////////////// Number keys -->
+        <name>Number pad on homerow</name>
+        <identifier>Number pad on homerow</identifier>
+        <autogen>
+            __KeyToKey__
+            KeyCode::M, ModifierFlag::SUPER_MODIFIER,
+            KeyCode::1
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::COMMA, ModifierFlag::SUPER_MODIFIER,
+            KeyCode::2
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::DOT, ModifierFlag::SUPER_MODIFIER,
+            KeyCode::3
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::J, ModifierFlag::SUPER_MODIFIER,
+            KeyCode::4
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::K, ModifierFlag::SUPER_MODIFIER,
+            KeyCode::5
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::L, ModifierFlag::SUPER_MODIFIER,
+            KeyCode::6
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::U, ModifierFlag::SUPER_MODIFIER,
+            KeyCode::7
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::I, ModifierFlag::SUPER_MODIFIER,
+            KeyCode::8
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::O, ModifierFlag::SUPER_MODIFIER,
+            KeyCode::9
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::SPACE, ModifierFlag::SUPER_MODIFIER,
+            KeyCode::0
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::P, ModifierFlag::SUPER_MODIFIER,
+            KeyCode::MINUS
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::SEMICOLON, ModifierFlag::SUPER_MODIFIER,
+            KeyCode::EQUAL
+        </autogen>
+
+
+        <modifierdef>F19</modifierdef>
+
+        <name>F19 to Escape and Control v2</name>
+        <appendix>Tap F19 for Escape, Hold F19 for Control</appendix>
+        <appendix>Works well with using Seil to remap CapsLock to F19(code 80).</appendix>
+        <appendix></appendix>
+        <appendix>Send a escape key event when the caps lock key is released before another key is released.</appendix>
+        <appendix>For example:</appendix>
+        <appendix><![CDATA[  caps lock down -> T down -> T up => control+T  ]]></appendix>
+        <appendix><![CDATA[  caps lock down -> T down -> caps lock up => escape,T  ]]></appendix>
+
+        <identifier>private.f19_escape_control_v2</identifier>
+        <autogen>
+            __KeyOverlaidModifier__
+            KeyCode::F19,
+            KeyCode::CONTROL_L, ModifierFlag::F19,
+            KeyCode::ESCAPE
+        </autogen>
+        <block>
+            <modifier_only>ModifierFlag::F19</modifier_only>
+            <autogen>__BlockUntilKeyUp__ KeyCode::F19</autogen>
+        </block>
+    </item>
+</root>
