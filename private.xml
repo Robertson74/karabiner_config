@@ -123,11 +123,11 @@
         <autogen>
             __KeyToKey__
             KeyCode::SLASH, ModifierFlag::SUPER_MODIFIER,
-            KeyCode::BACKSLASH,
+            KeyCode::BACKSLASH
         </autogen>
         <autogen>
             __KeyToKey__
-            KeyCode::SLASH, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L,
+            KeyCode::QUOTE, ModifierFlag::SUPER_MODIFIER,
             KeyCode::BACKSLASH, ModifierFlag::SHIFT_L
         </autogen>
 
