@@ -15,7 +15,36 @@
             KeyCode::CONTROL_L,
             KeyCode::ESCAPE
         </autogen>
+        <autogen>
+            __KeyOverlaidModifier__
+            KeyCode::RETURN,
+            KeyCode::CONTROL_R,
+            KeyCode::RETURN
+        </autogen>
 
+<!-- ///////////////////////// Editing -->
+        <!-- <name>Editing with super mod</name> -->
+        <!-- <identifier>Editing with super mod</identifier> -->
+        <autogen>
+            __KeyToKey__
+            KeyCode::H, ModifierFlag::SUPER_MODIFIER,
+            KeyCode::DELETE
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::N, ModifierFlag::SUPER_MODIFIER,
+            KeyCode::DELETE, ModifierFlag::OPTION_L
+        </autogen>
+        <!-- <autogen> -->
+        <!--     __KeyToKey__ -->
+        <!--     KeyCode::N, ModifierFlag::SUPER_MODIFIER, -->
+        <!--     KeyCode::FORWARD_DELETE -->
+        <!-- </autogen> -->
+        <!-- <autogen> -->
+        <!--     __KeyToKey__ -->
+        <!--     KeyCode::N, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L, -->
+        <!--     KeyCode::FORWARD_DELETE, ModifierFlag::OPTION_L -->
+        <!-- </autogen> -->
 <!-- ///////////////////////// Symbols -->
         <name>Symbols pad with Command_L + Super_MOD</name>
         <identifier>Symbols pad with Q</identifier>
@@ -79,7 +108,7 @@
         <autogen>
             __KeyToKey__
             KeyCode::SEMICOLON, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L,
-            KeyCode::EQUAL, ModifierFlag::SHIFT_L
+            KeyCode::EQUAL
         </autogen>
         <autogen>
             __KeyToKey__
@@ -89,7 +118,7 @@
         <autogen>
             __KeyToKey__
             KeyCode::SEMICOLON, ModifierFlag::SUPER_MODIFIER,
-            KeyCode::EQUAL
+            KeyCode::EQUAL, ModifierFlag::SHIFT_L
         </autogen>
         <autogen>
             __KeyToKey__
@@ -156,28 +185,5 @@
             KeyCode::0
         </autogen>
 
-
-        <!-- <modifierdef>F19</modifierdef> -->
-
-        <!-- <name>F19 to Escape and Control v2</name> -->
-        <!-- <appendix>Tap F19 for Escape, Hold F19 for Control</appendix> -->
-        <!-- <appendix>Works well with using Seil to remap CapsLock to F19(code 80).</appendix> -->
-        <!-- <appendix></appendix> -->
-        <!-- <appendix>Send a escape key event when the caps lock key is released before another key is released.</appendix> -->
-        <!-- <appendix>For example:</appendix> -->
-        <!-- <appendix><![CDATA[  caps lock down -> T down -> T up => control+T  ]]></appendix> -->
-        <!-- <appendix><![CDATA[  caps lock down -> T down -> caps lock up => escape,T  ]]></appendix> -->
-
-        <!-- <identifier>private.f19_escape_control_v2</identifier> -->
-        <!-- <autogen> -->
-        <!--     __KeyOverlaidModifier__ -->
-        <!--     KeyCode::F19, -->
-        <!--     KeyCode::CONTROL_L, ModifierFlag::F19, -->
-        <!--     KeyCode::ESCAPE -->
-        <!-- </autogen> -->
-        <!-- <block> -->
-        <!--     <modifier_only>ModifierFlag::F19</modifier_only> -->
-        <!--     <autogen>__BlockUntilKeyUp__ KeyCode::F19</autogen> -->
-        <!-- </block> -->
     </item>
 </root>
