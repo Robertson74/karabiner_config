@@ -45,6 +45,14 @@
         <!--     KeyCode::N, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L, -->
         <!--     KeyCode::FORWARD_DELETE, ModifierFlag::OPTION_L -->
         <!-- </autogen> -->
+<!-- ///////////////////////// Capslock remap -->
+        <name>Caps lock to tab + pipe</name>
+        <identifier>Caps lock to tab + pipe</identifier>
+        <autogen>
+            __KeyToKey__
+            KeyCode::BACKSLASH, ModifierFlag::SUPER_MODIFIER,
+            KeyCode::CAPSLOCK
+        </autogen>
 <!-- ///////////////////////// Symbols -->
         <name>Symbols pad with Command_L + Super_MOD</name>
         <identifier>Symbols pad with Q</identifier>
