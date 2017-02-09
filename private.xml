@@ -21,7 +21,6 @@
             KeyCode::CONTROL_R,
             KeyCode::RETURN
         </autogen>
-
 <!-- ///////////////////////// Editing -->
         <autogen>
             __KeyToKey__
@@ -54,6 +53,26 @@
 <!-- ///////////////////////// Symbols -->
         <name>Symbols pad with Command_L + Super_MOD</name>
         <identifier>Symbols pad with Q</identifier>
+        <autogen>
+            __KeyToKey__
+            KeyCode::W, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L,
+            KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::W, ModifierFlag::SUPER_MODIFIER,
+            KeyCode::BRACKET_LEFT
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::E, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L,
+            KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::E, ModifierFlag::SUPER_MODIFIER,
+            KeyCode::BRACKET_RIGHT
+        </autogen>
         <autogen>
             __KeyToKey__
             KeyCode::M, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L,
