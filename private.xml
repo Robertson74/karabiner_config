@@ -22,10 +22,12 @@
             KeyCode::RETURN
         </autogen>
 
-        <!-- test -->
 <!-- ///////////////////////// Editing -->
-        <!-- <name>Editing with super mod</name> -->
-        <!-- <identifier>Editing with super mod</identifier> -->
+        <autogen>
+            __KeyToKey__
+            KeyCode::H, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L,
+            KeyCode::FORWARD_DELETE
+        </autogen>
         <autogen>
             __KeyToKey__
             KeyCode::H, ModifierFlag::SUPER_MODIFIER,
@@ -33,19 +35,14 @@
         </autogen>
         <autogen>
             __KeyToKey__
+            KeyCode::N, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L,
+            KeyCode::FORWARD_DELETE, ModifierFlag::OPTION_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
             KeyCode::N, ModifierFlag::SUPER_MODIFIER,
             KeyCode::DELETE, ModifierFlag::OPTION_L
         </autogen>
-        <!-- <autogen> -->
-        <!--     __KeyToKey__ -->
-        <!--     KeyCode::N, ModifierFlag::SUPER_MODIFIER, -->
-        <!--     KeyCode::FORWARD_DELETE -->
-        <!-- </autogen> -->
-        <!-- <autogen> -->
-        <!--     __KeyToKey__ -->
-        <!--     KeyCode::N, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L, -->
-        <!--     KeyCode::FORWARD_DELETE, ModifierFlag::OPTION_L -->
-        <!-- </autogen> -->
 <!-- ///////////////////////// Capslock remap -->
         <name>Caps lock to tab + pipe</name>
         <identifier>Caps lock to tab + pipe</identifier>
