@@ -55,6 +55,16 @@
         <identifier>Symbols pad with Q</identifier>
         <autogen>
             __KeyToKey__
+            KeyCode::Y, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L,
+            KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::Y, ModifierFlag::SUPER_MODIFIER,
+            KeyCode::BACKQUOTE
+        </autogen>
+        <autogen>
+            __KeyToKey__
             KeyCode::W, ModifierFlag::SUPER_MODIFIER, ModifierFlag::COMMAND_L,
             KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L
         </autogen>
