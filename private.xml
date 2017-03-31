@@ -51,7 +51,23 @@
             KeyCode::CAPSLOCK
         </autogen>
 <!-- ///////////////////////// Symbols -->
+
         <name>Symbols pad with Command_L + Super_MOD</name>
+        <autogen>
+            __KeyToKey__
+            KeyCode::R, ModifierFlag::SUPER_MODIFIER,
+            KeyCode::SPACE
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::F, ModifierFlag::SUPER_MODIFIER,
+            KeyCode::DOT
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::Q, ModifierFlag::SUPER_MODIFIER,
+            KeyCode::SEMICOLON, ModifierFlag::SHIFT_L
+        </autogen>
         <identifier>Symbols pad with Q</identifier>
         <autogen>
             __KeyToKey__
