@@ -1,5 +1,21 @@
 <?xml version="1.0"?>
 <root>
+  <item>
+    <name>Flip win and alt keys (for v60 mini)</name>
+    <identifier>Flip win and alt keys (for v60 mini)</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::COMMAND_R,
+      KeyCode::OPTION_R
+    </autogen>
+    <autogen>
+      __KeyToKey__
+      KeyCode::OPTION_R,
+      KeyCode::COMMAND_R
+    </autogen>
+  </item>
+</root>
+<root>
     <modifierdef>SUPER_MODIFIER</modifierdef>
     <item>
         <identifier>private.SUPER_MODIFIER</identifier>
