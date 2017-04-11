@@ -37,6 +37,71 @@
             KeyCode::CONTROL_R,
             KeyCode::RETURN
         </autogen>
+
+<!-- ///////////////////////// F Keys -->
+        <name>F keys (numpad like)</name>
+        <identifier>F keys (numpad like)</identifier>
+        <autogen>
+            __KeyToKey__
+            KeyCode::M, ModifierFlag::SUPER_MODIFIER, ModifierFlag::OPTION_L,
+            KeyCode::F1
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::COMMA, ModifierFlag::SUPER_MODIFIER, ModifierFlag::OPTION_L,
+            KeyCode::F2
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::DOT, ModifierFlag::SUPER_MODIFIER, ModifierFlag::OPTION_L,
+            KeyCode::F3
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::J, ModifierFlag::SUPER_MODIFIER, ModifierFlag::OPTION_L,
+            KeyCode::F4
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::K, ModifierFlag::SUPER_MODIFIER, ModifierFlag::OPTION_L,
+            KeyCode::F5
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::L, ModifierFlag::SUPER_MODIFIER, ModifierFlag::OPTION_L,
+            KeyCode::F6
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::U, ModifierFlag::SUPER_MODIFIER, ModifierFlag::OPTION_L,
+            KeyCode::F7
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::I, ModifierFlag::SUPER_MODIFIER, ModifierFlag::OPTION_L,
+            KeyCode::F8
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::O, ModifierFlag::SUPER_MODIFIER, ModifierFlag::OPTION_L,
+            KeyCode::F9
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::SPACE, ModifierFlag::SUPER_MODIFIER, ModifierFlag::OPTION_L,
+            KeyCode::F10
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::P, ModifierFlag::SUPER_MODIFIER, ModifierFlag::OPTION_L,
+            KeyCode::F11
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::SEMICOLON, ModifierFlag::SUPER_MODIFIER, ModifierFlag::OPTION_L,
+            KeyCode::F12
+        </autogen>
+
 <!-- ///////////////////////// Editing -->
         <autogen>
             __KeyToKey__
